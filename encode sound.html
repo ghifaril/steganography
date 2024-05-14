@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steganography App</title>
+    <link rel="stylesheet" href="src audio/style.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Steganography Audio</h1>
+      <div class="input-container">
+        <div class="input-group">
+          <input type="file" id="audioFile" />
+          <br /><br />
+          <textarea id="message" placeholder="Masukkan pesan"></textarea>
+          <br /><br />
+          <label for="key">Password:</label>
+          <input type="password" id="key" placeholder="Masukkan password" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="hideMessage()">Sembunyikan Pesan</button>
+        <button onclick="resetApp()">Reset</button>
+      </div>
+      <div id="downloadContainer"></div>
+      <div id="extractionContainer"></div>
+    </div>
+    <script src="src audio/audio.js"></script>
+  </body>
+</html>

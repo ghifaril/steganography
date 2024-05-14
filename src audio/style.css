@@ -1,0 +1,102 @@
+body {
+  font-family: "Arial", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Untuk menjaga konten di depan video */
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea,
+input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 0 5px;
+  padding: 15px 20px;
+  background-color: #008eec;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: #ccc;
+}
+
+.buttons button:active {
+  background-color: #fcfdfd;
+}
+
+.output-container {
+  text-align: center;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  display: inline-block;
+}
+
+canvas {
+  max-width: 60%;
+  height: auto; /* Mengembalikan ukuran canvas ke aslinya */
+  max-width: 60%; /* Menyesuaikan lebar maksimum dengan container */
+  max-height: 250px;
+  display: block;
+  /* Agar canvas berada di b
+      
+      awah output */
+  margin-top: 20px;
+  /* Menambahkan margin di atas canvas */
+}
